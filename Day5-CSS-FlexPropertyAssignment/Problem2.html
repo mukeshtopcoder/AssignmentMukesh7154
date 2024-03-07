@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .main{
+            margin: 0 auto;
+            width: 80%;
+            height: 100vh;
+            background-color: white;
+        }
+        .menu{
+            height: 55px;
+            line-height: 55px;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content:space-between;
+        }
+        .navbar{
+            width: 100%;
+            box-shadow: 0px 0px 10px rgb(234, 232, 232);
+        }
+        .options ul{
+            margin-right: 80px;
+        }
+        .options li{
+            display: inline;
+            margin-left: 33px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .logo{
+            font-size: 25px;
+            font-weight: 800;
+            color: white;
+            background:linear-gradient(120deg,#C84EE6,#297BE4);
+            padding: 0px 12px 0px 14px;
+        }
+        .active{
+            color: #4A85FC;
+        }
+        .data{
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box1{
+            width: 45%;
+        }
+        .box2{
+            width: 45%;
+        }
+        #wel{
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+            margin-top: 100px;
+        }
+        .box1>h1{
+            font-size: 35px;
+            padding: 10px 0px;
+        }
+        .box1>p{
+            margin-top: 10px;
+            line-height: 28px;
+            font-size: 19px;
+            color: rgb(142, 139, 139);
+        }
+        .box2{
+            margin-right: 80px;;
+        }
+        .frame{
+            display: flex;
+            line-height: 25px;
+        }
+        .frame>h2{
+            font-size: 18px;
+            padding: 20px;
+        }
+        iframe{
+            border: none;
+        }
+        .box2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        .box2>.box{
+            margin-top: 25px;
+            box-shadow: 0px 0px 10px rgb(226, 225, 225);
+            width: 200px;
+            height: 250px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .box>i{
+            font-size: 50px;
+            padding: 12px;
+            border-radius: 100%;
+            color: white;
+        }
+        .box>h2{
+            margin: 15px 0px 15px 0px;
+        }
+        .box>p{
+            font-size: 20px;
+            line-height: 20px;
+            color: rgb(172, 171, 171);
+        }
+        .blue{
+            background-color: #4A85FC;
+        }
+        .orange{
+            background-color: #FC9926;
+        }
+        .purple{
+            background-color: #E349AC;
+        }
+        .green{
+            background-color: #24D2C8;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <div class="logo">StudyLab</div>
+                <div class="options">
+                    <ul>
+                        <li class="active">Home</li>
+                        <li>About</li>
+                        <li>Course</li>
+                        <li>Instructor</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="data">
+            <div class="box1">
+                <p id="wel">WELCOME TO STUDYLAB</p>
+                <h1>We Are StudyLab An Online Learning Center</h1>
+                <p>A small river ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima reprehenderit veniam nihil nemo officiis voluptate. Dicta commodi placeat sed.</p>
+                <p>For far away ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas non fuga error. Fuga dolorem ratione magnam beatae similique iste. non fuga error. Fuga dolorem ratione magnam beatae similique.</p><br>
+                <div class="frame">
+                    <iframe src="https://youtube.com/embed/dNo_BVzNb28?mute=1" width="160" height="90"></iframe>
+                    <h2>Learn anything from StudyKab, Watch video</h2>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="box">
+                    <i class="fa-solid fa-globe blue"></i>
+                    <h2>Top Quality Content</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-calendar-days purple"></i>
+                    <h2>Highly Skilled Instructor</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-landmark orange"></i>
+                    <h2>World Class & Quiz</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-notes-medical green"></i>
+                    <h2>Get Certified   </h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
