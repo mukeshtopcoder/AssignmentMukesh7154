@@ -1,4 +1,2 @@
 To Be Ask  : Java String Program to Convert String to InputStream
 Java String Program to Print the first letter of each word using regex
-Java String Program to Compare two strings
-Java String Program to Compare two strings lexicographically
