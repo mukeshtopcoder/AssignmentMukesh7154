@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+        }
+        #main{
+            margin-top: 80px;
+            padding: 35px;
+            width: 1000px;
+            height: 450px;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        .box{
+            border-radius: 10px;
+            background-color: #444444;
+            padding: 60px;
+            color: white;
+            font-size: 50px;
+            font-weight: 400;
+        }
+        #A{
+            grid-area: 1/1/2/3;
+        }
+        #B{
+            grid-area: 1/3/3/4;
+        }
+        #E{
+            grid-area: 1/4/4/5;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box" id="A">A</div>
+        <div class="box" id="B">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box" id="E">E</div>
+    </div>
+</body>
+</html>

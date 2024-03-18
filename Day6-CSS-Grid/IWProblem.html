@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IW Problem</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(100, 168, 195);
+            display: flex;
+            justify-content: center;
+        }
+        .keyboard{
+            background-color: rgb(39, 36, 36);
+            width: 1300px;
+            height: 350px;
+            margin-top: 150px;
+            box-shadow: 0px 5px 10px black;
+            border-radius: 10px;
+            padding: 30px;
+            gap: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(12,1fr);
+        }
+        .button{
+            height: 50px;
+            background-color: rgb(55, 50, 50);
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 800;
+            color: rgb(100, 168, 195);
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px black;
+            display: grid;
+        }
+        #enter{
+            grid-area: 3/11/4/13;
+        }
+        #shift{
+            grid-area: 4/11/5/13;
+        }
+        #space{
+            grid-area: 5/5/6/9;
+        }
+    </style>
+</head>
+<body>
+    <div class="keyboard">
+       <div class="button">~</div>
+       <div class="button">1</div>
+       <div class="button">2</div>
+       <div class="button">3</div>
+       <div class="button">4</div>
+       <div class="button">5</div>
+       <div class="button">6</div>
+       <div class="button">7</div>
+       <div class="button">8</div>
+       <div class="button">9</div>
+       <div class="button">0</div>
+       <div class="button">delete</div>
+       <div class="button">tab</div>
+       <div class="button">Q</div>
+       <div class="button">W</div>
+       <div class="button">E</div>
+       <div class="button">R</div>
+       <div class="button">T</div>
+       <div class="button">Y</div>
+       <div class="button">U</div>
+       <div class="button">I</div>
+       <div class="button">O</div>
+       <div class="button">P</div>
+       <div class="button">\</div>
+       <div class="button">caps</div>
+       <div class="button">A</div>
+       <div class="button">S</div>
+       <div class="button">D</div>
+       <div class="button">F</div>
+       <div class="button">G</div>
+       <div class="button">H</div>
+       <div class="button">J</div>
+       <div class="button">K</div>
+       <div class="button">L</div>
+       <div class="button" id="enter">Enter</div>
+       <div class="button">shift</div>
+       <div class="button">Z</div>
+       <div class="button">X</div>
+       <div class="button">C</div>
+       <div class="button">V</div>
+       <div class="button">B</div>
+       <div class="button">N</div>
+       <div class="button">M</div>
+       <div class="button"><</div>
+       <div class="button">></div>
+       <div class="button" id="shift">shift</div>
+       <div class="button"><i class="ri-global-fill"></i></div>
+       <div class="button">control</div>
+       <div class="button">option</div>
+       <div class="button">alt</div>
+       <div class="button" id="space">space</div>
+       <div class="button">alt</div>
+       <div class="button">option</div>
+       <div class="button"><i class="ri-arrow-left-fill"></i></div>
+       <div class="button"><i class="ri-arrow-right-fill"></i></div>
+    </div>
+</body>
+</html>
