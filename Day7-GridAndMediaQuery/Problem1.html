@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #111;
+            }
+        #main{
+            background-image: url(https://img.freepik.com/free-vector/digital-technology-background-with-abstract-wave-border_53876-117508.jpg);
+            background-size: 100% 100%;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+        }
+        #inner{
+            width: 78%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            padding: 30px;   
+        }
+        @media screen and (max-width:800px) {
+            #inner{
+                grid-template-columns: repeat(2,1fr);
+                width: 90%;
+            }
+            #main{
+                height: 1000px;
+            }
+        }
+        @media screen and (max-width:500px) {
+            #inner{
+                grid-template-columns: repeat(1,1fr);
+                width: 95%;
+            }
+            #main{
+                height: 1700px;
+            }
+        }
+        .box{
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 20px #e8e0c4;
+        }
+        .cappuccino{
+            display: flex;
+            justify-content: space-between;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .price{
+            color: #B58836;
+        }
+        .content{
+            margin-top: 20px;
+            line-height: 25px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="inner">
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Cappuccino</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Americano</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Espresso</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Macchiato</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Mocha</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Coffee Latte</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Piccolo Latte</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Ristretto</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>
+            <div class="box">
+                <div class="cappuccino">
+                    <p class="name">Affogato</p>
+                    <p class="price">$49</p>
+                </div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit guemsb!</p>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

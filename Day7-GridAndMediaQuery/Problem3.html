@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        #main{
+            width: 85%;
+        }
+        .nav{
+            width: 100%;
+            background-color: yellow;
+            height: 50px;
+            line-height: 50px;
+            padding: 10px;
+        }
+        .box1,.box2{
+            margin: 10px;
+            padding: 10px;
+            height: 500px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: lime;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and (max-width:800px) {
+            .box{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .box1,.box2{
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="nav">
+            <h1>Nagivation</h1>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <h1>Left Box</h1>
+            </div>
+            <div class="box2">
+                <h1>Right Box</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

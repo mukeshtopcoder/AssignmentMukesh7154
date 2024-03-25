@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #main{
+            width: 80%;
+        }
+        #rooms{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+        #rooms>p{
+            font-family: sans-serif;
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        #boxes{
+            margin-top: 50px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+        }
+        @media screen and (max-width: 1000px) {
+            #boxes{
+                margin-top: 50px;
+                height: 400px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media screen and (max-width: 700px) {
+            #boxes{
+                margin-top: 50px;
+                height: 400px;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .box{
+            padding: 10px;
+            text-align: center;
+        }
+        .box>img{
+            width: 100%;
+        }
+        .box>h1{
+            padding: 15px 0px;
+        }
+        .box>h3{
+            color: #FFC05A;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="rooms">
+            <h1>Rooms & Suites</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,<br>there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the<br>Semantics, a large language ocean.</p>
+        </div>
+        <div id="boxes">
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/sogo/images/img_1.jpg" alt="">
+                <h1>Single Room</h1>
+                <h3>90$ / PER NIGHT</h3>
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/sogo/images/img_2.jpg" alt="">
+                <h1>Family Room</h1>
+                <h3>120$ / PER NIGHT</h3>
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/sogo/images/img_3.jpg  " alt="">
+                <h1>Presidential Room</h1>
+                <h3>250$ / PER NIGHT</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

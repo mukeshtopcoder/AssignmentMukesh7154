@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWProblem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #main{
+            background-color: #000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #container{
+            background-color: #fff;
+            width: 70%;
+            display: linear;
+            justify-content: center;    
+        }
+        #header>p{
+            margin-top: 10px;
+        }
+        #header{
+            margin: 20px;
+            font-size: 13px;
+            width: 100%;
+            text-align: center;
+        }
+        #cards{
+            display: grid;
+            width: 90%;
+            height: 300px;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+            align-items: center;
+        }
+        @media screen and (max-width:1000px) {
+            #cards{
+                grid-template-columns: repeat(3,1fr);
+            }
+            #container{
+                width: 80%;
+            }
+            #icons{
+                grid-template-columns: repeat(2,1fr);
+                justify-content: space-between;
+                width: 90%;
+            }
+        }
+        @media screen and (max-width:800px) {
+            #cards{
+                grid-template-columns: repeat(2,1fr);
+            }
+            #container{
+                width: 90%;
+            }
+        }
+        @media screen and (max-width:400px) {
+            #cards{
+                grid-template-columns: repeat(1,1fr);
+            }
+            #container{
+                width: 100%;
+            }
+        }
+        .card{
+            text-align: center;
+            box-shadow: 0px 0px 10px #bbb;
+        }
+        .card>img{
+            width: 100%;
+            height: 150px;
+        }
+        .card>p{
+            line-height: 15px;
+            font-size: 12px;
+        }
+        #para{
+            margin: 10px 0px;
+        }
+        #button{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0px;
+        }
+        button{
+            padding: 2px;
+            border-radius: 5px;
+            border: none;
+            padding: 3px 8px;
+        }
+        #know{
+            background-color: white;
+            color: skyblue;
+            border: 1px solid #bbb;
+        }
+        #book{
+            border: 1px solid orange;
+            background-color: orange;
+            color: #fff;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+        }
+        #icons{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 80%;
+        }
+        .icon{
+            padding: 10px;
+            line-height: 12px;
+            font-size: 10px;
+            margin-top: 10px;
+            text-align: center;
+            width: 260px;
+            height: 110px;
+        }
+        .icon>i{
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: skyblue;
+        }
+        .icongroup{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <div id="header">
+                <h2>Our Specialist</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempora blanditiis accusantium velit <br>molestiae unde asperiores, tempore, iusto quae quas.</p>
+            </div>
+            <div class="box">
+                <div id="cards">
+                    <div class="card">
+                        <img src="https://previews.123rf.com/images/stocking/stocking1304/stocking130400146/19094269-portrait-of-an-handsome-young-doctor.jpg" alt="">
+                        <h3>ETHEL DAVIS</h3>
+                        <p>SR. FACULTY DATA SCIENCE</p>
+                        <p id="para">If you are looking at blank<br> cassettes on the web, you may be<br> very confused at the.</p>
+                        <div id="button">
+                            <button id="know">Know More</button>
+                            <button id="book">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/young-doctor-hospital-medical-medicine-health-care-clinic-office-portrait-glasses-man-stethoscope-specialist_772720-5257.jpg" alt="">
+                        <h3>ETHEL DAVIS</h3>
+                        <p>SR. FACULTY DATA SCIENCE</p>
+                        <p id="para">If you are looking at blank<br> cassettes on the web, you may be<br> very confused at the.</p>
+                        <div id="button">
+                            <button id="know">Know More</button>
+                            <button id="book">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://previews.123rf.com/images/stocking/stocking1304/stocking130400146/19094269-portrait-of-an-handsome-young-doctor.jpg" alt="">
+                        <h3>ETHEL DAVIS</h3>
+                        <p>SR. FACULTY DATA SCIENCE</p>
+                        <p id="para">If you are looking at blank<br> cassettes on the web, you may be<br> very confused at the.</p>
+                        <div id="button">
+                            <button id="know">Know More</button>
+                            <button id="book">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/young-doctor-hospital-medical-medicine-health-care-clinic-office-portrait-glasses-man-stethoscope-specialist_772720-5257.jpg" alt="">
+                        <h3>ETHEL DAVIS</h3>
+                        <p>SR. FACULTY DATA SCIENCE</p>
+                        <p id="para">If you are looking at blank<br> cassettes on the web, you may be<br> very confused at the.</p>
+                        <div id="button">
+                            <button id="know">Know More</button>
+                            <button id="book">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icongroup">
+                <div id="icons">
+                    <div class="icon">
+                        <i class="fa-solid fa-brush"></i>
+                        <h4>Teeth Whitening</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora quas voluptas, inventore, maxime beatae obcaecati id perspiciatis blanditiis iure.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>Teeth Whitening</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora quas voluptas, inventore, maxime beatae obcaecati id perspiciatis blanditiis iure.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <h4>Teeth Whitening</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora quas voluptas, inventore, maxime beatae obcaecati id perspiciatis blanditiis iure.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h4>Teeth Whitening</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora quas voluptas, inventore, maxime beatae obcaecati id perspiciatis blanditiis iure.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-filter"></i>
+                        <h4>Teeth Whitening</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora quas voluptas, inventore, maxime beatae obcaecati id perspiciatis blanditiis iure.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-docker"></i>
+                        <h4>Teeth Whitening</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora quas voluptas, inventore, maxime beatae obcaecati id perspiciatis blanditiis iure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

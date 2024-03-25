@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #main{
+            width: 90%;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "nav nav nav"
+            "left left right1"
+            "left left right2"
+            "left left right3";
+        }
+        @media screen and (max-width:1000px) {
+            #main{
+                grid-template-areas: 
+                "nav nav nav"
+                "left left left"
+                "right1 right2 right3";
+            }
+            #main>div:nth-child(2){
+                height: 400px;
+            }
+        }
+        @media screen and (max-width:725px) {
+            #main{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-areas: 
+                "nav"
+                "left"
+                "right1"
+                "right2"
+                "right3";
+            }
+            #main>div:nth-child(2){
+                height: 200px;
+            }
+        }
+        #main>div:nth-child(1){
+            height: 60px;
+            line-height: 60px;
+            grid-area: nav;
+            background-color: yellow;
+        }
+        #main>div:nth-child(2){
+            grid-area: left;
+            background-color: red;
+        }
+        #main>div:nth-child(3){
+            height: 150px;
+            grid-area: right1;
+            background-color: lime;
+        }
+        #main>div:nth-child(4){
+            height: 150px;
+            grid-area: right2;
+            background-color: lime;
+        }
+        #main>div:nth-child(5){
+            height: 150px;
+            grid-area: right3;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+            <h1>Navigation</h1>
+        </div>
+        <div class="box">
+            <h1>LEFT BOX</h1>
+        </div>
+        <div class="box">
+            <h1>RIGHT BOX 1</h1>
+        </div>
+        <div class="box">
+            <h1>RIGHT BOX 2</h1>
+        </div>
+        <div class="box">
+            <h1>RIGHT BOX 3</h1>
+        </div>
+    </div>
+</body>
+</html>
