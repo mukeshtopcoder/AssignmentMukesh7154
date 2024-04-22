@@ -1,0 +1,10 @@
+var a = 3;
+var b = 6;
+console.log("A : ",a);
+console.log("B : ",b);
+console.log("After Swap");
+var c = a;
+a = b; 
+b = c;
+console.log("A : ",a);
+console.log("B : ",b);
