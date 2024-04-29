@@ -1,0 +1,10 @@
+var a = 34;
+var b = 23;
+var c = 72;
+var d = 63;
+var e = 27;
+var f = 62;
+var g = 92;
+var sum1 = (a+b)*c;
+var sum2 = d+e+f+g;
+console.log(sum1>sum2);
